@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spotify Clone Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="App">
+      <div class="App__top-bar">
+        <div class="App__header">
+          <div class="App__song-navigation">
+            <div class="App__song-navigation-prev">
+              <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24"><polyline points="16 4 7 12 16 20" fill="none" stroke="#fff"></polyline></svg>
+            </div>
+            <div class="App__song-navigation-next">
+              <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24"><polyline points="8 4 17 12 8 20" fill="none" stroke="#fff"></polyline></svg>
+            </div>
+          </div>
+          <button class="App__user">
+            <div class="App__figure">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg" data-testid="user-icon"><path d="M15.216 13.717L12 11.869C11.823 11.768 11.772 11.607 11.757 11.521C11.742 11.435 11.737 11.267 11.869 11.111L13.18 9.57401C14.031 8.58001 14.5 7.31101 14.5 6.00001V5.50001C14.5 3.98501 13.866 2.52301 12.761 1.48601C11.64 0.435011 10.173 -0.0879888 8.636 0.0110112C5.756 0.198011 3.501 2.68401 3.501 5.67101V6.00001C3.501 7.31101 3.97 8.58001 4.82 9.57401L6.131 11.111C6.264 11.266 6.258 11.434 6.243 11.521C6.228 11.607 6.177 11.768 5.999 11.869L2.786 13.716C1.067 14.692 0 16.526 0 18.501V20H1V18.501C1 16.885 1.874 15.385 3.283 14.584L6.498 12.736C6.886 12.513 7.152 12.132 7.228 11.691C7.304 11.251 7.182 10.802 6.891 10.462L5.579 8.92501C4.883 8.11101 4.499 7.07201 4.499 6.00001V5.67101C4.499 3.21001 6.344 1.16201 8.699 1.00901C9.961 0.928011 11.159 1.35601 12.076 2.21501C12.994 3.07601 13.5 4.24301 13.5 5.50001V6.00001C13.5 7.07201 13.117 8.11101 12.42 8.92501L11.109 10.462C10.819 10.803 10.696 11.251 10.772 11.691C10.849 12.132 11.115 12.513 11.503 12.736L14.721 14.585C16.127 15.384 17.001 16.884 17.001 18.501V20H18.001V18.501C18 16.526 16.932 14.692 15.216 13.717Z" fill="#fff"></path></svg>
+            </div>
+            <span class="App__username">Yourname</span>
+            <div class="App__expand-arrow">
+              <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path d="M13 10L8 4.206 3 10z" fill="#fff"></path></svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="App__nav-bar">
+        <div class="App__logo">
+
+    <svg width="131" height="40" viewBox="0 0 131 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_3803_34)">
+        <path d="M0.924072 20.1176C0.924072 30.9412 9.70361 39.8823 20.3315 39.8823C30.9593 39.8823 39.7389 30.9412 39.7389 20.1176C39.7389 9.29411 30.9593 0.470581 20.3315 0.470581C9.70361 0.470581 0.924072 9.29411 0.924072 20.1176ZM27.4937 29.2941C22.9884 26.4706 17.2124 25.7647 10.5123 27.2941C8.89497 27.5294 8.66393 25.1765 10.0502 24.9412C17.4435 23.1765 23.6816 24 28.7645 27.1765C30.0352 28 28.7645 30 27.4937 29.2941ZM29.4576 24C24.2592 20.7059 16.2883 19.7647 10.1657 21.6471C8.20185 22.2353 7.50873 19.1765 9.35705 18.7059C16.4038 16.5882 25.0678 17.6471 31.0749 21.4118C32.6921 22.4706 31.0749 25.0588 29.4576 24ZM9.24153 15.6471C7.27769 16.3529 6.00696 12.9412 8.20185 12.1176C15.0175 9.99999 26.5696 10.3529 33.7318 14.7059C35.6957 15.7647 33.8474 19.0588 31.768 17.8823C25.5299 14.1176 15.1331 13.7647 9.24153 15.6471ZM53.0237 26.3529C51.0599 26.3529 49.2115 25.6471 47.5943 24C47.4787 24 47.4787 24.1176 47.4787 24.1176L45.6304 26.3529C45.5149 26.4706 45.5149 26.5882 45.6304 26.7059C47.7098 28.5882 50.2512 29.5294 53.0237 29.5294C56.9514 29.5294 59.3773 27.2941 59.3773 24C59.3773 21.1765 57.6445 19.6471 53.6013 18.5882C50.2512 17.7647 49.6736 17.1765 49.6736 16C49.6736 14.8235 50.8288 14.1176 52.3306 14.1176C53.8324 14.1176 55.2186 14.7059 56.8359 15.8823C56.8359 15.8823 56.9514 16 57.0669 16C57.1824 16 57.1824 15.8823 57.1824 15.8823L58.7997 13.5294C58.9153 13.4118 58.9153 13.4118 58.7997 13.2941C56.9514 11.7647 54.7565 10.9412 52.3306 10.9412C48.7495 10.9412 46.208 13.1765 46.208 16.3529C46.208 19.7647 48.5184 20.8235 52.2151 21.7647C55.4496 22.4706 55.9117 23.1765 55.9117 24.3529C55.9117 25.6471 54.7565 26.3529 53.0237 26.3529ZM63.9981 17.2941V15.7647C63.9981 15.6471 63.8826 15.5294 63.7671 15.5294H60.7636C60.6481 15.5294 60.5325 15.6471 60.5325 15.7647V33.0588C60.5325 33.1765 60.6481 33.2941 60.7636 33.2941H63.7671C63.8826 33.2941 63.9981 33.1765 63.9981 33.0588V27.6471C65.1533 28.9412 66.4241 29.5294 68.1569 29.5294C71.2759 29.5294 74.395 27.0588 74.395 22.3529C74.395 17.6471 71.2759 15.2941 68.1569 15.2941C66.4241 15.2941 65.1533 15.8823 63.9981 17.2941ZM67.4638 26.4706C65.3844 26.4706 63.8826 24.7059 63.8826 22.3529C63.8826 20 65.3844 18.3529 67.4638 18.3529C69.5431 18.3529 70.9294 20 70.9294 22.3529C70.9294 24.7059 69.5431 26.4706 67.4638 26.4706ZM75.3191 22.4706C75.3191 26.4706 78.4382 29.5294 82.4814 29.5294C86.5246 29.5294 89.6436 26.3529 89.6436 22.3529C89.6436 18.3529 86.6401 15.2941 82.5969 15.2941C78.5537 15.2941 75.3191 18.4706 75.3191 22.4706ZM78.7847 22.3529C78.7847 20 80.2865 18.3529 82.4814 18.3529C84.6763 18.3529 86.2936 20.1176 86.2936 22.4706C86.2936 24.8235 84.7918 26.4706 82.5969 26.4706C80.402 26.4706 78.7847 24.7059 78.7847 22.3529ZM94.9576 15.5294V12.1176C94.9576 12 94.9576 11.8823 94.8421 11.8823H91.8385C91.723 11.8823 91.6075 12 91.6075 12.1176V15.5294H90.1057C89.9902 15.5294 89.8747 15.6471 89.8747 15.7647V18.3529C89.8747 18.4706 89.9902 18.5882 90.1057 18.5882H91.6075V25.4118C91.6075 28.1176 92.8782 29.5294 95.5352 29.5294C96.5749 29.5294 97.6145 29.2941 98.4232 28.8235C98.5387 28.8235 98.5387 28.7059 98.5387 28.5882V26.1176C98.5387 26 98.5387 25.8823 98.4232 25.8823H98.1921C97.6145 26.2353 96.9214 26.3529 96.3438 26.3529C95.4197 26.3529 94.9576 25.8823 94.9576 24.9412V18.5882H98.4232C98.5387 18.5882 98.6542 18.4706 98.6542 18.3529V15.7647C98.6542 15.6471 98.5387 15.5294 98.4232 15.5294H94.9576ZM109.86 15.1765C109.86 13.8823 110.322 13.4118 111.361 13.4118C111.939 13.4118 112.517 13.4118 113.094 13.6471H113.21C113.21 13.6471 113.325 13.5294 113.325 13.4118V10.9412C113.325 10.8235 113.325 10.7059 113.21 10.7059C112.632 10.4706 111.824 10.3529 110.668 10.3529C107.896 10.3529 106.51 12 106.51 14.9412V15.5294H105.008C104.892 15.5294 104.777 15.6471 104.777 15.7647V18.3529C104.777 18.4706 104.892 18.5882 105.008 18.5882H106.51V29.0588C106.51 29.1765 106.625 29.2941 106.741 29.2941H109.744C109.86 29.2941 109.86 29.1765 109.86 29.0588V18.5882H112.748L117.022 29.0588C116.56 30.1176 116.098 30.3529 115.405 30.3529C114.827 30.3529 114.249 30.2353 113.672 29.8823H113.556L113.441 30L112.401 32.2353C112.401 32.3529 112.401 32.5882 112.517 32.5882C113.556 33.1765 114.481 33.4118 115.636 33.4118C117.831 33.4118 119.101 32.3529 120.141 29.5294L125.339 15.8823V15.6471C125.339 15.5294 125.224 15.5294 125.108 15.5294H121.989C121.874 15.5294 121.874 15.6471 121.874 15.7647L118.639 24.9412L115.174 15.7647C115.174 15.6471 115.058 15.5294 114.943 15.5294H109.86V15.1765ZM100.272 15.5294C100.156 15.5294 100.04 15.6471 100.04 15.7647V29.0588C100.04 29.1765 100.156 29.2941 100.272 29.2941H103.275C103.391 29.2941 103.391 29.1765 103.391 29.0588V15.7647C103.391 15.6471 103.391 15.5294 103.275 15.5294H100.272ZM99.5784 11.6471C99.5784 12.8235 100.618 13.8823 101.773 13.8823C102.928 13.8823 103.853 12.8235 103.853 11.6471C103.853 10.4706 102.928 9.5294 101.773 9.5294C100.618 9.5294 99.5784 10.4706 99.5784 11.6471ZM127.881 19.7647C129.036 19.7647 130.076 18.8235 130.076 17.6471C130.076 16.4706 129.036 15.5294 127.881 15.5294C126.726 15.5294 125.801 16.4706 125.801 17.6471C125.801 18.8235 126.726 19.7647 127.881 19.7647ZM127.881 15.7647C128.921 15.7647 129.845 16.5882 129.845 17.6471C129.845 18.7059 128.921 19.5294 127.881 19.5294C126.841 19.5294 126.033 18.7059 126.033 17.6471C126.033 16.5882 126.841 15.7647 127.881 15.7647ZM128.343 17.8823C128.689 17.7647 128.921 17.5294 128.921 17.1765C128.921 16.7059 128.458 16.4706 127.996 16.4706H127.072V18.7059H127.534V18H127.996L128.458 18.7059H129.036L128.343 17.8823ZM127.996 16.8235C128.227 16.8235 128.458 16.9412 128.458 17.1765C128.458 17.4118 128.227 17.5294 127.996 17.5294H127.534V16.8235H127.996Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_3803_34">
+        <rect width="131" height="40" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>
+        
+        </div>
+        <div class="App__categories-nav">
+          <div class="App__category-item App__category-item--selected">
+            <div class="icon"><svg viewBox="0 0 576 512" width="100" title="home">
+      <path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z" fill="#fff"/>
+    </svg></div>
+            <span>Home</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg viewBox="0 0 512 512" width="100" title="search">
+      <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" fill="#C4C4C4"/>
+    </svg></div>
+            <span>Search</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg width="112" height="111" viewBox="0 0 112 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="8" height="111" fill="#C4C4C4"/>
+    <rect x="24" width="8" height="111" fill="#C4C4C4"/>
+    <rect width="7.96484" height="111.503" transform="matrix(0.869849 -0.493319 0.506711 0.862116 48 14.7345)" fill="#C4C4C4"/>
+    </svg>
+    </div>
+            <span>Your Library</span>
+          </div>
+        </div>
+        <div class="App__playlists-nav">
+          <div class="App__category-item">
+            <div class="icon"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" fill="#c4c4c4"><path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path><path fill="none" d="M0 0h16v16H0z"></path></svg>
+    </div>
+            <span>Create Playlist</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16"><path fill="none" d="M0 0h16v16H0z"></path><path d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z" fill="#c4c4c4"></path></svg>
+    </div>
+            <span>Liked Songs</span>
+          </div>
+          <div class="App__category-item">
+            <div class="icon"><svg role="img" width="12" height="12" viewBox="0 0 527 483" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 264.208C1.5 119.17 118.974 1.5 264 1.5C409.026 1.5 526.5 119.17 526.5 264.208C526.5 351.905 483.535 429.569 417.628 477.247C406.996 484.938 392.595 481.729 385.684 471.362L376.758 457.971C369.699 447.382 372.818 433.617 382.485 426.529C432.426 389.914 464.783 330.851 464.783 264.208C464.783 153.128 374.839 63.1707 264 63.1707C153.161 63.1707 63.2173 153.128 63.2173 264.208C63.2173 330.851 95.5742 389.914 145.515 426.529C155.182 433.617 158.301 447.382 151.242 457.971L142.316 471.362C135.405 481.729 121.004 484.938 110.372 477.247C44.4653 429.569 1.5 351.905 1.5 264.208Z" fill="#1ED760"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M104.5 263.216C104.5 174.586 175.78 102.5 264 102.5C352.22 102.5 423.5 174.586 423.5 263.216C423.5 315.346 398.84 361.707 360.685 391.048C350.27 399.057 336.041 395.66 329.404 385.602L323.251 376.279C316.458 365.986 319.652 353.018 328.353 346.12C352.699 326.817 368.307 296.878 368.307 263.216C368.307 204.912 321.476 157.884 264 157.884C206.524 157.884 159.693 204.912 159.693 263.216C159.693 296.878 175.301 326.817 199.647 346.12C208.348 353.018 211.542 365.986 204.749 376.279L198.596 385.602C191.959 395.66 177.73 399.057 167.315 391.048C129.16 361.707 104.5 315.346 104.5 263.216Z" fill="#1ED760"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M200.5 261C200.5 226.296 229.118 198.5 264 198.5C298.882 198.5 327.5 226.296 327.5 261C327.5 295.704 298.882 323.5 264 323.5C229.118 323.5 200.5 295.704 200.5 261Z" fill="#1ED760"></path></svg>
+    </div>
+            <span>Your Episodes</span>
+          </div>
+        </div>
+        <div class="App__divider-container"><hr></div>
+
+      </div>
+      <div class="App__now-playing-bar">
+        <div class="function">
+          <div class="music">
+            <img
+              src="https://images.genius.com/31c7d09c4aa1b324bb911d0db72453a3.1000x1000x1.jpg"
+              alt=""
+            />
+            <div class="details">
+              <div class="name">Night Change</div>
+              <div class="artist">One Direction</div>
+            </div>
+            <div class="love">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2589/2589175.png"
+                alt="love"
+              />
+            </div>
+          </div>
+          <div class="playback">
+            <div class="upper">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/724/724979.png"
+                alt="shuffle"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png"
+                alt="back"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2088/2088562.png"
+                alt="pause"
+                class="pause"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4211/4211386.png"
+                alt="forward"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4146/4146819.png"
+                alt="loop"
+              />
+            </div>
+            <div class="lower">
+              <div class="text">0:00</div>
+              <div class="line"></div>
+              <div class="text">3:46</div>
+            </div>
+          </div>
+          <div class="control">
+            <div class="images">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/26/26615.png"
+                alt="mic"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/98/98068.png"
+                alt="queue"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2777/2777142.png"
+                alt="device"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/25/25695.png"
+                alt="volume"
+              />
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="App__main-view">
+        <div class="App__top-gradient"></div>
+        <div class="App__header-placeholder"></div>
+        <section class="App__section App__quick-links">
+          <h1>Good afternoon</h1>
+          <div class="App__quick-links-container">
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img">♥</div>
+              <span>Liked Songs</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Daily Mix 1</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Daily Mix 2</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Daily Mix 3</span>
+            </div>
+            <div class="App__quick-link">
+              <div class="App__quick-link-featured-img"></div>
+              <span>Daily Mix 4</span>
+            </div>
+          </div>
+        </section>
+        <section class="App__section App__your-shows">
+          <div class="App__section-header">
+            <h3>Your shows</h3>
+            <span>SEE ALL</span>
+          </div>
+          <div class="App__section-grid-container">
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>TED Radio Hour</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Post Reports</h3>
+              <span>The Washington Post</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Planet Money</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>TED Radio Hour</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Post Reports</h3>
+              <span>The Washington Post</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Planet Money</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+          </div>
+        </section>
+        <section class="App__section App__your-shows">
+          <div class="App__section-header">
+            <h3>Your top mixes</h3>
+            <span>SEE ALL</span>
+          </div>
+          <div class="App__section-grid-container">
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>TED Radio Hour</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Post Reports</h3>
+              <span>The Washington Post</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Planet Money</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>TED Radio Hour</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Short Wave</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Post Reports</h3>
+              <span>The Washington Post</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>Planet Money</h3>
+              <span>NPR</span>
+            </div>
+            <div class="App__section-grid-item">
+              <div class="featured-image"></div>
+              <h3>How I Built this...</h3>
+              <span>NPR</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
